@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillman St</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            min-height: 200vh;
+        }
+        p {
+    text-align: center;
+    margin: 20px; /* Optional: Adjusts spacing around the paragraph */
+}
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            background-color: #555;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        header {
+            height: 470px;
+            background-image: url('https://i.postimg.cc/RCgTwR96/skillman-pt2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        header h2 {
+            margin: 10px 0 0;
+            font-size: 24px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        /* Style for buttons in header */
+        .header-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .header-buttons a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .header-buttons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Slideshow styling */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            animation: slide 15s infinite;
+        }
+
+        .slide {
+            min-width: 50%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Define the slide animation */
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(0);
+            }
+            33% {
+                transform: translateX(-100%);
+            }
+            53% {
+                transform: translateX(-100%);
+            }
+            66% {
+                transform: translateX(-200%);
+            }
+            86% {
+                transform: translateX(-200%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+    
+        
+        <div class="header-buttons">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+<p>COMING SOON!!!!!!</p>
+    <!-- Slideshow Section -->
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="https://i.postimg.cc/MH59Ys3X/IMG-2695.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/gJ9tcL6c/image0-5.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/SNQTKhj9/image1-1.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/Wb99FHJH/image2.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/CxzcjsGL/image3.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/6QZzP6bk/image4.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/1tZM1xLf/image5.jpg">
+            </div>
+            <div class="slide">
+                <img src="https://i.postimg.cc/RhSRq7Cm/image6.jpg">
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
