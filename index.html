@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skillman St</title>
 
-  <!-- Stripe Buy Button Script (Moved Here) -->
+  <!-- Stripe Buy Button Script -->
   <script async src="https://js.stripe.com/v3/buy-button.js"></script>
 
   <style>
@@ -85,33 +85,23 @@
       transform: translateY(-5px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
-    .slideshow-container {
-      position: relative;
-      max-width: 100%;
-      margin-top: 20px;
-      overflow: hidden;
-    }
-    .slides {
+
+    /* NEW: Product Grid */
+    .product-grid {
       display: flex;
-      animation: slide 15s infinite;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px; /* Space between images */
+      margin: 40px auto;
+      max-width: 1200px;
+      padding: 0 20px;
     }
-    .slide {
-      min-width: 50%;
-      transition: transform 1s ease-in-out;
-    }
-    .slide img {
-      width: 50%;
+    .product-grid img {
+      width: 200px;
       height: auto;
       border-radius: 10px;
-    }
-    @keyframes slide {
-      0% { transform: translateX(0); }
-      20% { transform: translateX(0); }
-      33% { transform: translateX(-100%); }
-      53% { transform: translateX(-100%); }
-      66% { transform: translateX(-200%); }
-      86% { transform: translateX(-200%); }
-      100% { transform: translateX(0); }
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -128,20 +118,18 @@
 
   <p>COMING SOON!!!!!!</p>
 
-  <!-- Slideshow Section -->
-  <div class="slideshow-container">
-    <div class="slides">
-      <div class="slide"><img src="https://i.postimg.cc/MH59Ys3X/IMG-2695.jpg"></div>
-      <div class="slide"><img src="https://i.postimg.cc/gJ9tcL6c/image0-5.jpg"></div>
-      <div class="slide"><img src="https://i.postimg.cc/SNQTKhj9/image1-1.jpg"></div>
-      <div class="slide"><img src="https://i.postimg.cc/Wb99FHJH/image2.jpg"></div>
-      <div class="slide"><img src="https://i.postimg.cc/CxzcjsGL/image3.jpg"></div>
-      <div class="slide"><img src="https://i.postimg.cc/6QZzP6bk/image4.jpg"></div>
-      <div class="slide"><img src="https://i.postimg.cc/1tZM1xLf/image5.jpg"></div>
-    </div>
+  <!-- Product Images Section -->
+  <div class="product-grid">
+    <img src="https://i.postimg.cc/MH59Ys3X/IMG-2695.jpg" alt="Product 1">
+    <img src="https://i.postimg.cc/gJ9tcL6c/image0-5.jpg" alt="Product 2">
+    <img src="https://i.postimg.cc/SNQTKhj9/image1-1.jpg" alt="Product 3">
+    <img src="https://i.postimg.cc/Wb99FHJH/image2.jpg" alt="Product 4">
+    <img src="https://i.postimg.cc/CxzcjsGL/image3.jpg" alt="Product 5">
+    <img src="https://i.postimg.cc/6QZzP6bk/image4.jpg" alt="Product 6">
+    <img src="https://i.postimg.cc/1tZM1xLf/image5.jpg" alt="Product 7">
   </div>
 
-  <!-- Stripe Buy Button (outside the slideshow) -->
+  <!-- Stripe Buy Button (outside) -->
   <div style="text-align:center; margin-top: 40px;">
     <stripe-buy-button
       buy-button-id="buy_btn_1RIwmeKBz8WSUc6jBb1RYV1h"
@@ -150,4 +138,6 @@
   </div>
 
 </body>
+</html>
+
 </html>
