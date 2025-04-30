@@ -83,7 +83,6 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* Product grid layout */
     .product-grid {
       display: flex;
       flex-wrap: wrap;
@@ -95,8 +94,13 @@
     }
 
     .product {
-      width: 200px;
+      width: 180px;
       text-align: center;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
     }
 
     .product img {
@@ -107,27 +111,18 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-   stripe-buy-button {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  margin: 10px auto 0 auto;
-  overflow: hidden;
-  text-align: center;
-}
+    .buy-button-wrapper {
+      width: 100%;
+      max-width: 160px;
+      margin: 10px auto 0 auto;
+      overflow: hidden;
+      text-align: center;
+    }
 
-
-.product {
-  width: 200px;
-  text-align: center;
-  background: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px; /* ⬅️ Add this to create space between rows */
-}
-
-
+    stripe-buy-button {
+      width: 100% !important;
+      display: block;
+    }
 
   </style>
 </head>
@@ -143,70 +138,78 @@
 
   <p>COMING SOON!!!!!!</p>
 
-  <!-- Product Grid Section -->
   <div class="product-grid">
-    <!-- Product 1 -->
+
     <div class="product">
       <img src="https://i.postimg.cc/MH59Ys3X/IMG-2695.jpg" alt="Product 1">
-     <stripe-buy-button
-  buy-button-id="buy_btn_1RJgakKBz8WSUc6jpFCBtWWE"
-  publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-</stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJgakKBz8WSUc6jpFCBtWWE"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
 
-    <!-- Product 2 -->
     <div class="product">
       <img src="https://i.postimg.cc/gJ9tcL6c/image0-5.jpg" alt="Product 2">
-      <stripe-buy-button
-  buy-button-id="buy_btn_1RJgkaKBz8WSUc6jpGhSX5qb"
-  publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-</stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJgkaKBz8WSUc6jpGhSX5qb"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
 
-    <!-- Product 3 -->
     <div class="product">
       <img src="https://i.postimg.cc/SNQTKhj9/image1-1.jpg" alt="Product 3">
-      <stripe-buy-button
-  buy-button-id="buy_btn_1RJgipKBz8WSUc6jt8BOvhTm"
-  publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-</stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJgipKBz8WSUc6jt8BOvhTm"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
 
-    <!-- Product 4 -->
     <div class="product">
       <img src="https://i.postimg.cc/Wb99FHJH/image2.jpg" alt="Product 4">
-      <stripe-buy-button
-  buy-button-id="buy_btn_1RJgmLKBz8WSUc6jPyj4kJHA"
-  publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-</stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJgmLKBz8WSUc6jPyj4kJHA"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
 
-    <!-- Product 5 -->
     <div class="product">
       <img src="https://i.postimg.cc/CxzcjsGL/image3.jpg" alt="Product 5">
-      <stripe-buy-button
-  buy-button-id="buy_btn_1RJgnkKBz8WSUc6jW8W4Vc2Z"
-  publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-</stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJgnkKBz8WSUc6jW8W4Vc2Z"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
 
-    <!-- Product 6 -->
     <div class="product">
       <img src="https://i.postimg.cc/6QZzP6bk/image4.jpg" alt="Product 6">
-      <stripe-buy-button
-        buy-button-id="buy_btn_1RIwmeKBz8WSUc6jBb1RYV1h"
-        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-      </stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RIwmeKBz8WSUc6jBb1RYV1h"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
 
-    <!-- Product 7 -->
     <div class="product">
       <img src="https://i.postimg.cc/1tZM1xLf/image5.jpg" alt="Product 7">
-      <stripe-buy-button
-  buy-button-id="buy_btn_1RJgqxKBz8WSUc6jqqhOgD2h"
-  publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-</stripe-buy-button>
+      <div class="buy-button-wrapper">
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RJgqxKBz8WSUc6jqqhOgD2h"
+          publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+        </stripe-buy-button>
+      </div>
     </div>
+
   </div>
 </body>
 </html>
