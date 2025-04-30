@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Skillman St</title>
 
   <!-- Stripe Buy Button Script -->
@@ -17,16 +17,19 @@
       color: #333;
       min-height: 200vh;
     }
+
     p {
       text-align: center;
       margin: 20px;
     }
+
     nav {
       display: flex;
       justify-content: center;
       background-color: #333;
       padding: 10px 0;
     }
+
     nav a {
       color: white;
       text-decoration: none;
@@ -37,9 +40,11 @@
       font-size: 16px;
       transition: background-color 0.3s ease;
     }
+
     nav a:hover {
       background-color: #777;
     }
+
     header {
       height: 470px;
       background-image: url('https://i.postimg.cc/RCgTwR96/skillman-pt2.jpg');
@@ -54,23 +59,14 @@
       color: white;
       position: relative;
     }
-    header h1 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
-    header h2 {
-      margin: 10px 0 0;
-      font-size: 24px;
-      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    }
+
     .header-buttons {
       display: flex;
       justify-content: center;
       gap: 15px;
       margin-top: 20px;
     }
+
     .header-buttons a {
       color: white;
       text-decoration: none;
@@ -81,31 +77,41 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       transition: all 0.3s ease;
     }
+
     .header-buttons a:hover {
       transform: translateY(-5px);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* NEW: Product Grid */
+    /* Product grid layout */
     .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px; /* Space between images */
+      gap: 30px;
       margin: 40px auto;
       max-width: 1200px;
       padding: 0 20px;
     }
-    .product-grid img {
+
+    .product {
       width: 200px;
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
       height: auto;
       border-radius: 10px;
       object-fit: cover;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+
+    stripe-buy-button {
+      margin-top: 10px;
+    }
   </style>
 </head>
-
 <body>
 
   <header>
@@ -118,26 +124,70 @@
 
   <p>COMING SOON!!!!!!</p>
 
-  <!-- Product Images Section -->
+  <!-- Product Grid Section -->
   <div class="product-grid">
-    <img src="https://i.postimg.cc/MH59Ys3X/IMG-2695.jpg" alt="Product 1">
-    <img src="https://i.postimg.cc/gJ9tcL6c/image0-5.jpg" alt="Product 2">
-    <img src="https://i.postimg.cc/SNQTKhj9/image1-1.jpg" alt="Product 3">
-    <img src="https://i.postimg.cc/Wb99FHJH/image2.jpg" alt="Product 4">
-    <img src="https://i.postimg.cc/CxzcjsGL/image3.jpg" alt="Product 5">
-    <img src="https://i.postimg.cc/6QZzP6bk/image4.jpg" alt="Product 6">
-    <img src="https://i.postimg.cc/1tZM1xLf/image5.jpg" alt="Product 7">
-  </div>
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/MH59Ys3X/IMG-2695.jpg" alt="Product 1">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1RJgakKBz8WSUc6jpFCBtWWE"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
 
-  <!-- Stripe Buy Button (outside) -->
-  <div style="text-align:center; margin-top: 40px;">
-    <stripe-buy-button
-      buy-button-id="buy_btn_1RIwmeKBz8WSUc6jBb1RYV1h"
-      publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
-    </stripe-buy-button>
-  </div>
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/gJ9tcL6c/image0-5.jpg" alt="Product 2">
+      <stripe-buy-button
+        buy-button-id="buy_btn_2REPLACE_THIS"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
 
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/SNQTKhj9/image1-1.jpg" alt="Product 3">
+      <stripe-buy-button
+        buy-button-id="buy_btn_3REPLACE_THIS"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/Wb99FHJH/image2.jpg" alt="Product 4">
+      <stripe-buy-button
+        buy-button-id="buy_btn_4REPLACE_THIS"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/CxzcjsGL/image3.jpg" alt="Product 5">
+      <stripe-buy-button
+        buy-button-id="buy_btn_5REPLACE_THIS"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/6QZzP6bk/image4.jpg" alt="Product 6">
+      <stripe-buy-button
+        buy-button-id="buy_btn_1RIwmeKBz8WSUc6jBb1RYV1h"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
+
+    <!-- Product 7 -->
+    <div class="product">
+      <img src="https://i.postimg.cc/1tZM1xLf/image5.jpg" alt="Product 7">
+      <stripe-buy-button
+        buy-button-id="buy_btn_7REPLACE_THIS"
+        publishable-key="pk_test_51RIweqKBz8WSUc6j0OCl2OGZGE45MzHMGyXoeFF8biSn3rHoaMVb3qXtyhw36K9jek9K1djLgJgoIcHP7cZSYprm00hfAXtvOr">
+      </stripe-buy-button>
+    </div>
+  </div>
 </body>
 </html>
-
-
