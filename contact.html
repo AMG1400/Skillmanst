@@ -1,4 +1,4 @@
-<!DOCTYPE htmlL>
+<!DOCTYPE html>
 <html>
 <head>
     <style>
@@ -125,19 +125,57 @@
                 transform: translateX(0);
             }
         }
-        
+
         p {
-    text-align: center;
-    margin: 20px; /* Optional: Adjusts spacing around the paragraph */
-}
+            text-align: center;
+            margin: 20px;
+        }
+
+        /* Contact form styling */
+        #contact {
+            padding: 40px;
+            background: #f0f0f0;
+        }
+
+        #contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #contact input, 
+        #contact textarea {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            padding: 12px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #contact button:hover {
+            background-color: #555;
+        }
 
     </style>
 </head>
 <body>
-   
     <header>
-    
-        
         <div class="header-buttons">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -145,15 +183,18 @@
         </div>
     </header>
 
-    
+    <p>UNDER CONSTRUCTION</p>
 
-    <p>
-
-UNDER CONSTRUCTION
-</p>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="https://formspree.io/f/yourFormID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number">
+            <textarea name="message" placeholder="What would you like to send?" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 </body>
-
-
-
-
 </html>
+
