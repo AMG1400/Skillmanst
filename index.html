@@ -93,38 +93,38 @@
       padding: 0 20px;
     }
 
-    .product {
-  width: 360px; /* Doubled width */
+.product {
+  width: 360px; /* Increased width to double the original */
   background: white;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .product img {
   width: 100%;
-  height: 320px; /* Doubled height */
+  height: auto; /* Allows the image to scale proportionally */
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 20px; /* More space between image and button */
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.buy-button-wrapper {
+  width: 100%;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
 
-    .buy-button-wrapper {
-      width: 100%;
-      max-width: 160px;
-      margin-top: auto;
-      padding-bottom: 10px;
-      overflow: hidden;
-    }
+stripe-buy-button {
+  width: 100% !important;
+  display: block;
+}
 
-    stripe-buy-button {
-      width: 100% !important;
-      display: block;
-    }
 
   </style>
 </head>
