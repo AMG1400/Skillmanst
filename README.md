@@ -27,4 +27,4 @@ Future Improvements:
 
 How to View
 You can see the live site here:
- https://amg1400.github.io/Skillman.github.io/index.html
+https://amg1400.github.io/Skillmanst/
